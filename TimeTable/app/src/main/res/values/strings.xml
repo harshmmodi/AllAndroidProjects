@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Time Table</string>
+
+    <string-array name="Main">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+    </string-array>
+
+    <string-array name="Description">
+        <item>Syllabus of First Year</item>
+        <item>Syllabus of Second Year</item>
+        <item>Syllabus of Third Year</item>
+        <item>Syllabus of Fourth Year</item>
+    </string-array>
+
+    <string-array name="Semesters">
+        <item>First Semester</item>
+        <item>Second Semester</item>
+    </string-array>
+
+    <string-array name="SemDesc">
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+
+    <string-array name="FirstY_1S_Sub">
+        <item>Physics</item>
+        <item>Mathematics – I</item>
+        <item>Mathematics – II</item>
+        <item>Digital Logic</item>
+    </string-array>
+    <string-array name="FirstY_1S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="FirstY_2S_Sub">
+        <item>Mathematics – III</item>
+        <item>Engineering Mechanics</item>
+        <item>Basic Electronics</item>
+        <item>Circuit and Network Theory</item>
+        <item>Introduction to Computer Programming</item>
+    </string-array>
+    <string-array name="FirstY_2S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="SecondY_1S_Sub">
+        <item>Mathematics – IV</item>
+        <item>Digital Circuits</item>
+        <item>Data Structures and Algos</item>
+        <item>Numerical Methods</item>
+        <item>Computer Organization</item>
+        <item>Electrical Technology</item>
+
+    </string-array>
+    <string-array name="SecondY_1S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="SecondY_2S_Sub">
+        <item>Mathematics-V</item>
+        <item>Object Oriented Programming</item>
+        <item>Microprocessors and Assembly Language</item>
+        <item>Graph Theory and Combinatorics</item>
+        <item>Computer Architecture</item>
+
+    </string-array>
+    <string-array name="SecondY_2S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+
+    <string-array name="ThirdY_1S_Sub">
+        <item>Computer Graphics</item>
+        <item>System Programming</item>
+        <item>Operating Systems</item>
+        <item>Formal Language and Automata</item>
+        <item>Digital Communications</item>
+    </string-array>
+
+    <string-array name="ThirdY_1S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="ThirdY_2S_Sub">
+        <item>DBMS</item>
+        <item>Principles of Prog. Lang.</item>
+        <item>Compiler Design</item>
+        <item>Computer Networks</item>
+        <item>Design and Analysis of Algos</item>
+    </string-array>
+
+    <string-array name="ThirdY_2S_Desc">
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

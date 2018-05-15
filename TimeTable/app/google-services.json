@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "702287183446",
+    "firebase_url": "https://jubcse-61719.firebaseio.com",
+    "project_id": "jubcse-61719",
+    "storage_bucket": "jubcse-61719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702287183446:android:1b7270a36a66681d",
+        "android_client_info": {
+          "package_name": "com.example.harshmodi.timetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702287183446-nnki8e77qhu5m6qnnu1ijpjhbgubg022.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harshmodi.timetable",
+            "certificate_hash": "a286b292497268866072cd03ff69725ee0d9ba35"
+          }
+        },
+        {
+          "client_id": "702287183446-9d9c2t8f9f6drd70erqpuba1ntaofu3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDowoCSaM47bXZhkyZC7bXwY-Qw8wkXCAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702287183446-9d9c2t8f9f6drd70erqpuba1ntaofu3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

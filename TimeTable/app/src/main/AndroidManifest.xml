@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.harshmodi.timetable">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="JUCSE Syllabus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ThirdYear" />
+        <activity android:name=".ThirdYFirstS" />
+        <activity android:name=".ThirdYSecondS" />
+        <activity android:name=".Computer_Graphics" />
+        <activity android:name=".System_Prog" />
+        <activity android:name=".OS" />
+        <activity android:name=".Automata" />
+        <activity android:name=".DigCom" />
+        <activity android:name=".FirstYear" />
+        <activity android:name=".FirstYFirstS" />
+        <activity android:name=".Physics" />
+        <activity android:name=".Maths_I" />
+        <activity android:name=".Maths_II" />
+        <activity android:name=".Digital_Logic" />
+        <activity android:name=".FirstYSecondS" />
+        <activity android:name=".Maths_III" />
+        <activity android:name=".Emech" />
+        <activity android:name=".Basic_Elec" />
+        <activity android:name=".Circuit_Theory" />
+        <activity android:name=".Comp_Prog" />
+        <activity android:name=".SecondYear" />
+        <activity android:name=".SecondYFirstS" />
+        <activity android:name=".Maths_IV" />
+        <activity android:name=".Digital_Circuit" />
+        <activity android:name=".DSA" />
+        <activity android:name=".NM" />
+        <activity android:name=".CO" />
+        <activity android:name=".ETech" />
+        <activity android:name=".SecondYSecondS" />
+        <activity android:name=".Maths_V" />
+        <activity android:name=".OOP" />
+        <activity android:name=".Micro_Assembly" />
+        <activity android:name=".Graph" />
+        <activity android:name=".CompArch" />
+        <activity android:name=".DBMS" />
+        <activity android:name=".PPL" />
+        <activity android:name=".Compiler" />
+        <activity android:name=".Computer_Networks" />
+        <activity android:name=".DA_Algo" />
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity"></activity>
+    </application>
+
+</manifest>

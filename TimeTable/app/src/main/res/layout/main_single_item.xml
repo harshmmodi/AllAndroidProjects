@@ -1,0 +1,77 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMain"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/ivMain"
+            android:text="MAIN"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMain"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/ivMain"
+            android:text="Description"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivMain"
+            android:layout_alignParentRight="true"
+            android:text="Click to know more"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/CheckButton"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_above="@+id/tvClick"
+                android:layout_alignLeft="@+id/ivMain"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ivMain"
+                android:background="@null"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="-2dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
