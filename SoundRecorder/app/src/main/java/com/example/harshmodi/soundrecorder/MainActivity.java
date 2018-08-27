@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import java.io.File;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button buttonStart, buttonStop, buttonPlayLastRecordAudio,
             buttonStopPlayingRecording ;
+    RadioButton r1, r2;
     String AudioSavePathInDevice = null;
     MediaRecorder mediaRecorder ;
     Random random ;
@@ -40,41 +42,66 @@ public class MainActivity extends AppCompatActivity {
         buttonStop = findViewById(R.id.stop);
         buttonPlayLastRecordAudio = findViewById(R.id.prevStart);
         buttonStopPlayingRecording = findViewById(R.id.prevStop);
-
+        r1 = findViewById(R.id.talkClass);
+        r2 = findViewById(R.id.hornClass);
         buttonStop.setEnabled(false);
         buttonPlayLastRecordAudio.setEnabled(false);
-       buttonStopPlayingRecording.setEnabled(false);
-
+        buttonStopPlayingRecording.setEnabled(false);
         random = new Random();
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if(checkPermission()) {
+                    if(r1.isChecked()){
 
-                    AudioSavePathInDevice =
-                            Environment.getExternalStorageDirectory().getAbsolutePath() + "/" +
-                                    "AudioRecording.3gp";
+                        AudioSavePathInDevice =
+                                Environment.getExternalStorageDirectory().getAbsolutePath() + "/Talk/" + System.currentTimeMillis() +
+                                        ".3gp";
+                        MediaRecorderReady();
 
-                    MediaRecorderReady();
+                        try {
+                            mediaRecorder.prepare();
+                            mediaRecorder.start();
+                        } catch (IllegalStateException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
 
-                    try {
-                        mediaRecorder.prepare();
-                        mediaRecorder.start();
-                    } catch (IllegalStateException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        buttonStart.setEnabled(false);
+                        buttonStop.setEnabled(true);
+
+                        Toast.makeText(MainActivity.this, "Recording started",
+                                Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        AudioSavePathInDevice =
+                                Environment.getExternalStorageDirectory().getAbsolutePath() + "/Horn/" + System.currentTimeMillis() +
+                                        ".3gp";
+                        MediaRecorderReady();
+
+                        try {
+                            mediaRecorder.prepare();
+                            mediaRecorder.start();
+                        } catch (IllegalStateException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                        buttonStart.setEnabled(false);
+                        buttonStop.setEnabled(true);
+
+                        Toast.makeText(MainActivity.this, "Recording started",
+                                Toast.LENGTH_LONG).show();
                     }
 
-                    buttonStart.setEnabled(false);
-                    buttonStop.setEnabled(true);
 
-                    Toast.makeText(MainActivity.this, "Recording started",
-                            Toast.LENGTH_LONG).show();
                 } else {
                     requestPermission();
                 }
